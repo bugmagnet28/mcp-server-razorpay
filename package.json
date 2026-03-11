@@ -1,0 +1,29 @@
+{
+  "name": "mcp-server-razorpay",
+  "version": "1.0.0",
+  "description": "MCP Server for Razorpay — expose Razorpay payment APIs to AI agents",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-server-razorpay": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "inspector": "npx @modelcontextprotocol/inspector tsx src/index.ts"
+  },
+  "keywords": ["mcp", "mcp-server", "razorpay", "payments", "ai-agent"],
+  "author": "Sanyam Pathak",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.2",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}
